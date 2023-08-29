@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "5808bacc-8de5-46af-86d3-edd5fa659942",
+		"name": "Calculator-Loan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17379330"
+	},
+	"item": [
+		{
+			"name": "Calculator",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"plafon\": 1000000,\n  \"lama_pinjaman\": 12,\n  \"suku_bunga_pertahun\": 5,\n  \"tanggal_mulai_angsuran\": \"2023-09-01\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/hitung_pinjaman",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hitung_pinjaman"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
